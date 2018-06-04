@@ -1,14 +1,3 @@
-# Angular-agile-platform
-An agile development platform based on Angular
-
-dev tool
-Vscode Debugger for Chrome
-Angular snippets
-Augury
-json-server
-
-
-
 # Taskmgr
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.7.
