@@ -1,3 +1,25 @@
-<p>
-  sidebar works!
-</p>
+<mat-nav-list>
+    <h3 mat-subheader>Project</h3>
+    <mat-list-item [routerLink]="['/project']" (click)="onNavClick()">
+      <mat-icon mat-list-icon>list</mat-icon>
+      <span mat-line>Project home page</span>
+      <span mat-line mat-subheader>All project</span>
+    </mat-list-item>
+    <h3 mat-subheader>Calendar</h3>
+    <mat-list-item [routerLink]="['/tasklist']" (click)="onNavClick()">
+      <mat-icon mat-list-icon>alarm</mat-icon>
+      <span mat-line>Month</span>
+      <span mat-line mat-subheader>Task</span>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-icon mat-list-icon>alarm_add</mat-icon>
+      <span mat-line>Week</span>
+      <span mat-line mat-subheader>Task</span>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-icon mat-list-icon>alarm_on</mat-icon>
+      <span mat-line>Day</span>
+      <span mat-line mat-subheader>Task</span>
+    </mat-list-item>
+</mat-nav-list>
+
