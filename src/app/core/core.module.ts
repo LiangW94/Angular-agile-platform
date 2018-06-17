@@ -7,6 +7,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { SharedModule } from '../shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from '../app-routing.module';
+import { MatIconRegistry } from '@angular/material';
+import { DomSanitizer } from '@angular/platform-browser';
+import { loadSvgResources } from '../utils/svg.util';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 
@@ -32,9 +35,12 @@ import { MatSidenavModule } from '@angular/material/sidenav';
   ]
 })
 export class CoreModule {
-  constructor(@Optional() @SkipSelf() parent: CoreModule) {
+  constructor(@Optional() @SkipSelf() parent: CoreModule,
+  ir: MatIconRegistry,
+  ds: DomSanitizer) {
     if (parent) {
       throw new Error('Module exist');
     }
+    loadSvgResources(ir, ds);
   }
  }

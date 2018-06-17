@@ -7,7 +7,9 @@ import {
   MatButtonModule,
   MatCardModule,
   MatInputModule,
-  MatListModule
+  MatListModule,
+  MatSlideToggleModule,
+  MatGridListModule,
       } from '@angular/material';
 
 
@@ -20,7 +22,9 @@ import {
   MatButtonModule,
   MatCardModule,
   MatInputModule,
-  MatListModule
+  MatListModule,
+  MatSlideToggleModule,
+  MatGridListModule
   ],
   exports: [
     CommonModule,
@@ -30,7 +34,9 @@ import {
     MatButtonModule,
     MatCardModule,
     MatInputModule,
-    MatListModule
+    MatListModule,
+    MatSlideToggleModule,
+    MatGridListModule
   ],
   declarations: []
 })

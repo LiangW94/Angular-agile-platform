@@ -3,4 +3,6 @@
   <mat-icon>menu</mat-icon>
   </button>
   <span>Task manager</span>
+  <span class="fill-remaining-space"></span>
+  <mat-slide-toggle (change)="onChange($event.checked)">Dark theme</mat-slide-toggle>
 </mat-toolbar>
