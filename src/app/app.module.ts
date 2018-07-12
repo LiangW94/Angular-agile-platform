@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { ProjectModule } from './project/project.module';
 import { MatDialogModule } from '@angular/material/dialog';
+import { TaskModule } from './task/task.module';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     HttpClientModule,
     MatDialogModule,
     ProjectModule,
+    TaskModule,
     BrowserAnimationsModule,
   ],
   providers: [],
