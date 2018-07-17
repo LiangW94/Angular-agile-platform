@@ -1,5 +1,5 @@
 <form action="">
-  <h2 mat-dialog-title>New project</h2>
+  <h2 mat-dialog-title>{{title}}</h2>
   <div mat-dialog-content>
   <mat-input-container color="" align='' class="full-width">
     <input matInput type="text" placeholder="Project name">
@@ -10,6 +10,6 @@
   </div>
   <div mat-dialog-actions>
     <button type="button" mat-raised-button color="primary">Save</button>
-    <button type="button" mat-button mat-dialog-close>Close</button>
+    <button type="button" mat-button mat-dialog-close (click)="onCloseClick()">Close</button>
   </div>
 </form>

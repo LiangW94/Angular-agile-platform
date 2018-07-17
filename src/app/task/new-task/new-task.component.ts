@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject, Output, EventEmitter } from '@angular/core';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material';
 
 @Component({
   selector: 'app-new-task',
@@ -7,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewTaskComponent implements OnInit {
 
+  @Output() closeButton = new EventEmitter<void>();
+
+  title = '';
   priorities = [
     {
       label: 'level 1',
@@ -26,9 +30,15 @@ export class NewTaskComponent implements OnInit {
     },
   ];
 
-  constructor() { }
+  constructor(public dialogRef: MatDialogRef<NewTaskComponent>,
+    @Inject(MAT_DIALOG_DATA) private data) { }
 
   ngOnInit() {
+    this.title = this.data.title;
+    console.log(JSON.stringify(this.data.task));
   }
 
+  onCloseClick() {
+    this.dialogRef.close();
+  }
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialogRef } from '../../../../node_modules/@angular/material';
 
 @Component({
   selector: 'app-invite',
@@ -26,6 +27,9 @@ export class InviteComponent implements OnInit {
   ngOnInit() {
   }
 
-  constructor() { }
+  constructor(public dialogRef: MatDialogRef<InviteComponent>) { }
 
+  onCloseClick() {
+    this.dialogRef.close();
+  }
 }

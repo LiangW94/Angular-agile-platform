@@ -10,7 +10,7 @@
   </div>
   <div mat-dialog-actions>
     <button type="button" mat-raised-button color="primary">Save</button>
-    <button type="button" mat-button mat-dialog-close>Close</button>
+    <button type="button" mat-button mat-dialog-close (click)="onCloseClick()">Close</button>
   </div>
 </form>
 <mat-autocomplete #autoMembers="matAutocomplete">
