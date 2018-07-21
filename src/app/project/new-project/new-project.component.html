@@ -9,7 +9,7 @@
   </mat-input-container>    
   </div>
   <div mat-dialog-actions>
-    <button type="button" mat-raised-button color="primary">Save</button>
+    <button type="button" mat-raised-button color="primary" (click)="onCloseClick()">Save</button>
     <button type="button" mat-button mat-dialog-close (click)="onCloseClick()">Close</button>
   </div>
 </form>
