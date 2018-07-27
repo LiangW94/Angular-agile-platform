@@ -20,11 +20,13 @@ import {
   MatNativeDateModule
       } from '@angular/material';
 import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
+import { DirectiveModule } from '../directive/directive.module';
 
 
 @NgModule({
   imports: [
   CommonModule,
+  DirectiveModule,
   MatSidenavModule,
   MatToolbarModule,
   MatIconModule,
@@ -45,6 +47,7 @@ import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.componen
   ],
   exports: [
     CommonModule,
+    DirectiveModule,
     MatSidenavModule,
     MatToolbarModule,
     MatIconModule,

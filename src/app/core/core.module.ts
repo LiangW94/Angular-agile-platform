@@ -13,6 +13,7 @@ import { loadSvgResources } from '../utils/svg.util';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import 'hammerjs';
+import '../../../node_modules/rxjs/add/operator/take';
 
 @NgModule({
   imports: [
