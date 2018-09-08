@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProjectModule } from './project/project.module';
 import { MatDialogModule } from '@angular/material/dialog';
 import { TaskModule } from './task/task.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { TaskModule } from './task/task.module';
     MatDialogModule,
     ProjectModule,
     TaskModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
   ],
   providers: [],

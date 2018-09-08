@@ -10,8 +10,7 @@ import { AppRoutingModule } from '../app-routing.module';
 import { MatIconRegistry } from '@angular/material';
 import { DomSanitizer } from '@angular/platform-browser';
 import { loadSvgResources } from '../utils/svg.util';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatSidenavModule } from '@angular/material/sidenav';
+import { ServicesModule } from '../services/services.module';
 import 'hammerjs';
 import '../../../node_modules/rxjs/add/operator/take';
 
@@ -22,6 +21,7 @@ import '../../../node_modules/rxjs/add/operator/take';
     HttpModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    ServicesModule.forRoot()
   ],
   declarations: [
     HeaderComponent,
