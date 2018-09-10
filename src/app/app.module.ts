@@ -11,13 +11,15 @@ import { ProjectModule } from './project/project.module';
 import { MatDialogModule } from '@angular/material/dialog';
 import { TaskModule } from './task/task.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NewFormComponent } from './new-form/new-form.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    NewFormComponent
   ],
   imports: [
     BrowserModule,
