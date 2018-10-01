@@ -22,6 +22,7 @@ import {
       } from '@angular/material';
 import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
 import { DirectiveModule } from '../directive/directive.module';
+import { ChipsListComponent } from './chips-list/chips-list.component';
 
 
 @NgModule({
@@ -74,6 +75,6 @@ import { DirectiveModule } from '../directive/directive.module';
   entryComponents: [
     ConfirmDialogComponent
   ],
-  declarations: [ConfirmDialogComponent]
+  declarations: [ConfirmDialogComponent, ChipsListComponent]
 })
 export class SharedModule { }
